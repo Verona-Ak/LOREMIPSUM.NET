@@ -1,0 +1,44 @@
+.social {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-left: -1.11em;
+        margin-right: -1.11em;
+        margin-bottom: -10px;
+        @media screen and (max-width: 1024px) {
+            flex-wrap: wrap;
+            margin-left: -10px;
+			margin-right: -10px;
+        }
+    }
+    &__item {
+        margin-left: 1.11em;
+        margin-right: 1.11em;
+        margin-bottom: 10px;
+        @media screen and (max-width: 1024px) {
+            margin-left: 10px;
+			margin-right: 10px;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        &:hover {
+            .social {
+                &__name {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    &__icon {
+        width: 1.11em;
+        min-width: 1.11em;
+        margin-right: 0.56em;
+    }
+    &__name {
+        font-size: 0.72em;
+        color: $light;
+        transition: .3s;
+    }
+}

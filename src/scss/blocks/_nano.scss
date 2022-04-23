@@ -1,0 +1,16 @@
+// Для работы библиотеки необходимо обозначить вложенность
+.nano { 
+    .nano-pane {
+        width: 7px;
+        background-color: #3D4050;
+        border-radius: 3px;
+        height: calc(100% - (2 * 0.17em));
+        top: 50%;
+        right: 0.22em;
+        transform: translateY(-50%);
+        .nano-slider {
+            background: $primary-color;
+            border-radius: 3px;
+        }
+    }
+}

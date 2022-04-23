@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-ExtraBold.eot');
+    src: url('Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-ExtraBold.woff2') format('woff2'),
+        url('Raleway-ExtraBold.woff') format('woff'),
+        url('Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

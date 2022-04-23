@@ -1,0 +1,61 @@
+.range {
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.61em;
+    }
+    &__descr, &__percent{
+        font-size: 1em;
+        margin-bottom: 0;
+        @media screen and (max-width: 1024px) {
+            font-size: 14px;
+        }
+    }
+    &__descr {
+        max-width: 80%;
+        color: $light;
+    }
+    &__percent {
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.85);
+    }
+    &__input {
+        height: 6px;
+        width: 100%;
+        appearance: none;
+        border-radius: 3px;
+        &::-webkit-slider-runnable-track {
+            height: 6px;
+            border: 1px solid $light;
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        &::-webkit-slider-thumb {
+            width: 27px;
+            height: 27px;
+            margin-top: -11px;
+            border: 3px solid #286690;
+            border-radius: 50%;
+            background-color: #42A9ED;
+            appearance: none;
+            cursor: pointer;
+        }
+        &::-moz-range-track {
+            height: 6px;
+            border: 1px solid $light;
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        &::-moz-range-thumb {
+            width: 27px;
+            height: 27px;
+            margin-top: -11px;
+            border: 3px solid #286690;
+            border-radius: 50%;
+            background-color: #42A9ED;
+            appearance: none;
+            cursor: pointer;
+        }
+    }
+}

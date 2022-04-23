@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'),
+        url('Lato-Bold.woff2') format('woff2'),
+        url('Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato ExtraBold'), local('Lato-ExtraBold'),
+        url('Lato-ExtraBold.woff2') format('woff2'),
+        url('Lato-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('Lato-Regular.woff2') format('woff2'),
+        url('Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato SemiBold'), local('Lato-SemiBold'),
+        url('Lato-SemiBold.woff2') format('woff2'),
+        url('Lato-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'),
+        url('Raleway-ExtraBold.woff2') format('woff2'),
+        url('Raleway-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

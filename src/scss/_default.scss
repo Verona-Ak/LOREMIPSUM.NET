@@ -1,0 +1,72 @@
+:root {
+	@media screen and (min-width: 1921px) {
+		font-size: 16px;
+	}
+}
+
+.page {
+	position: relative;
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: $dark;
+	@media screen and (min-width: 1921px) {
+		font-size: calc(1rem + 22.4*(100vw - 120rem)/4479)!important;
+	}
+}
+
+.main {
+	min-height: 80vh;
+}
+
+.section, .header, .footer {
+	position: relative;
+	overflow: hidden;
+	&__container {
+		position: relative;
+		width: 100%;
+		max-width: 1170px;
+		margin-right: auto;
+		margin-left: auto;
+		@media screen and (min-width: 1921px) {
+			max-width: 70%;
+		}
+		@media screen and (max-width: 1366px) {
+			max-width: 85%;
+		}
+	}
+}
+
+.title {
+	&__text {
+		&_primary {
+			color: $primary-color;
+		}
+	}
+}
+
+.list {
+	list-style: none;
+	&__item {
+		position: relative;
+		margin-bottom: 5px;
+		margin-left: 11px;
+		font-size: 1em;
+		font-weight: 400;
+		line-height: 1.2;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&::before {
+            content: '';
+            display: inline-block;
+			margin-right: 11px;
+            margin-bottom: 0.35em;
+            width: 0.25em;
+            height: 2px;
+            background-color: $dark;
+        }
+	}
+}
+

@@ -1,0 +1,139 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -30px;
+    &__block {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 30px;
+        @media screen and (max-width: 1024px) {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+        @media screen and (max-width: 549px) {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+        &_4-col {
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+        }
+        &_8-col {
+            flex-basis: 66.66%;
+            max-width: 66.66%;
+        }
+        &_center {
+            text-align: center;
+        }
+        &_btn {
+            margin-top: 25px;
+            @media screen and (max-width: 1024px) {
+                margin-top: 0;
+            }
+        }
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        height: 2.67em;
+        padding: 0.67em 0.56em;
+        background-color: rgba($light, 0.85);
+        border: 1px solid $light;
+        border-radius: 3px;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        color: $background-color;
+        line-height: 1;
+        margin-bottom: 0;
+        -webkit-appearance: none;
+        &::placeholder {
+            color: $background-color;
+        }
+        &:focus, &:active {
+            outline: none;
+        }
+        &::-webkit-inner-spin-button {
+            appearance: none;
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+    &__file {
+        &-input {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            line-height: 1;
+            appearance: none;
+            border: 0;
+            padding: 0;
+            font-size: 0em;
+            line-height: 1;
+            &::file-selector-button {
+                width: 0;
+                height: 0;
+                border: 0;
+                padding: 0;
+                visibility: hidden;
+                opacity: 0;
+                overflow: hidden;
+            }
+        }
+        &-label {
+            appearance: none;
+            font-size: 0;
+            position: relative;
+            cursor: pointer;
+            width: 100%;
+            height: 3.2em;
+            padding: 0.67em 0.56em;
+            font-size: 0.83em;
+            border: 2px solid $primary-color;
+            border-radius: 3px;
+            background-color: $light;
+            border-radius: 3px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.is-active{
+                color: inherit;
+                input[type='file']{
+                    width: 100%;
+                    font-size: 1em;
+                    color: $background-color;
+                    line-height: 1;
+                    cursor: pointer;
+                    &::file-selector-button {
+                        height: auto;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                &>span, &>svg{
+                    display: none !important;
+                }
+            }
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+            }
+        }
+        &-text {
+            white-space: nowrap;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $dark;
+        }
+        &-icon {
+            margin-right: 10px;
+        }
+    }
+}
+
+

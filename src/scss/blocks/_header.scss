@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    padding: 1.78em 0;
+    background: rgba(16, 16, 29, 0.9);
+    @media screen and (max-width: 549px) {
+        padding: 20px 0;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    &__logo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &__hamburger {
+        display: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        @media screen and (max-width: 1024px) {
+            display: block;
+        }     
+    }
+    &__mobile-menu {
+        display: none;
+    }
+    &__nav {
+        margin-left: 20px;
+        margin-right: 20px;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+}

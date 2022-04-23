@@ -1,0 +1,15 @@
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    &__line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $primary-color; 
+        margin-bottom: 4px;
+        transition: 0.5s all;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

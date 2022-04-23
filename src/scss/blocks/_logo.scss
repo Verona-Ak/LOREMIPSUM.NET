@@ -1,0 +1,28 @@
+.logo {
+    &__link {
+        display: inline-block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 1.56em;
+        line-height: 1;
+        color: $light;
+        text-transform: uppercase;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: .3s;
+        @media screen and (max-width: 849px) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: 549px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 440px) {
+            font-size: 18px;
+        }
+    }
+    &__text {
+        &_primary {
+            color: #42A9ED;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@keyframes increasingDots {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.8);
+    }
+}
+
+@keyframes decreasingDots {
+    from {
+        transform: scale(1.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}

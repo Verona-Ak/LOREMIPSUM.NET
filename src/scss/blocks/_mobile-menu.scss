@@ -1,0 +1,86 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(16, 16, 29, 0.8);
+    }
+    &__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 300px;
+        background-color: rgba(16, 16, 29, 1);
+        @media screen and (max-width: 549px) {
+            width: 100%;
+        }
+    }
+    &__wrapper {
+        padding: 20px;
+        &-outer {
+            overflow-y: auto;
+            height: 100%;
+            padding-top: 8vh;
+        }
+        &-inner {
+            overflow-y: auto;
+        }
+    }
+    &__nav {
+        .nav {
+            &__menu {
+                flex-direction: column;
+                align-items: stretch;
+                margin-right: 0;
+                margin-left: 0;
+            }
+            &__item {
+                margin-right: 0;
+                margin-left: 0;
+                @media screen and (max-width: 549px) {
+                    justify-content: center;
+                }
+            }
+            &__link {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    &__hamburger {
+        position: absolute;
+        height: 30px;
+        right: 10px;
+        top: 20px;
+        z-index: 3;
+        .hamburger {
+            &__line {
+                margin: 0;
+                &:nth-child(1) {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
